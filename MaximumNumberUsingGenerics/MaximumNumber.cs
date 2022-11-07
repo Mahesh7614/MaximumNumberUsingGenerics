@@ -28,7 +28,7 @@ namespace MaximumNumberUsingGenerics
             {
                 return String3;
             }
-            return String2;
+            return String3;
         }
     }
 }
