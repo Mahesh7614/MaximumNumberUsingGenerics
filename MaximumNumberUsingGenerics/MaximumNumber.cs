@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,29 +7,29 @@ using System.Threading.Tasks;
 
 namespace MaximumNumberUsingGenerics
 {
-    public static class MaximumNumber
+    public class MaximumNumber
     {
-        public static string MaximumstringegerNumber(string String1, string String2, string String3)
+        public M MaxNumber<M>(M value1, M value2, M value3)
         {
-            if (String1.CompareTo(String2) > 0 && String1.CompareTo(String3) > 0 ||
-                String1.CompareTo(String2) >= 0 && String1.CompareTo(String3) > 0 ||
-                String1.CompareTo(String2) > 0 && String1.CompareTo(String3) >= 0)
+            if (value1.CompareTo(value2) > 0 && value1.CompareTo(value3) > 0 ||
+                value1.CompareTo(value2) >= 0 && value1.CompareTo(value3) > 0 ||
+                value1.CompareTo(value2) > 0 && value1.CompareTo(value3) >= 0)
             {
-                return String1;
+                return value1;
             }
-            if (String2.CompareTo(String1) > 0 && String2.CompareTo(String3) > 0 ||
-                String2.CompareTo(String1) >= 0 && String2.CompareTo(String3) > 0 ||
-                String2.CompareTo(String1) > 0 && String2.CompareTo(String3) >= 0)
+            if (value2.CompareTo(value1) > 0 && value2.CompareTo(value3) > 0 ||
+                value2.CompareTo(value1) >= 0 && value2.CompareTo(value3) > 0 ||
+                value2.CompareTo(value1) > 0 && value2.CompareTo(value3) >= 0)
             {
-                return String2;
+                return value2;
             }
-            if (String3.CompareTo(String1) > 0 && String3.CompareTo(String2) > 0 ||
-                String3.CompareTo(String1) >= 0 && String3.CompareTo(String2) > 0 ||
-                String3.CompareTo(String1) > 0 && String3.CompareTo(String2) >= 0)
+            if (value3.CompareTo(value1) > 0 && value3.CompareTo(value2) > 0 ||
+                value3.CompareTo(value1) >= 0 && value3.CompareTo(value2) > 0 ||
+                value3.CompareTo(value1) > 0 && value3.CompareTo(value2) >= 0)
             {
-                return String3;
+                return value3;
             }
-            return String3;
+            return value1;
         }
     }
 }
