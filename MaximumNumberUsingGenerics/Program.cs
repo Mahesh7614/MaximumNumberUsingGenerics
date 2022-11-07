@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Maximum String is : " + MaximumNumber.MaximumstringegerNumber("MaheshWaghmare","YashwantKadam","TusharGarad"));
+            Console.WriteLine("Maximum String is : " + MaximumNumber.MaximumstringegerNumber("Apple","Peach","Banana"));
         }
     }
 }
