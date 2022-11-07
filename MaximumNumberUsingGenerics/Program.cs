@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Maximum Number is : " + MaximumNumber.MaximumfloategerNumber(20,10,30));
+            Console.WriteLine("Maximum Number is : " + MaximumNumber.MaximumfloategerNumber(30,10,20));
         }
     }
 }
