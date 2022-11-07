@@ -6,11 +6,11 @@ namespace MaximumNumberUsingGenerics
     {
         static void Main(string[] args)
         {
-            MaximumNumber<int> maximumInt = new MaximumNumber<int>(30, 20, 10);
+            MaximumNumber<int> maximumInt = new MaximumNumber<int>(30, 20, 10, 40);
             Console.WriteLine("Maximum Number is : " + maximumInt.MaxMethod());
-            MaximumNumber<float> maximumFloat = new MaximumNumber<float>(10, 20, 30);
+            MaximumNumber<float> maximumFloat = new MaximumNumber<float>(10, 40, 30, 20);
             Console.WriteLine("Maximum Number is : " + maximumFloat.MaxMethod());
-            MaximumNumber<string> maximumString = new MaximumNumber<string>("20","30","10");
+            MaximumNumber<string> maximumString = new MaximumNumber<string>("20","30","40","10");
             Console.WriteLine("Maximum Number is : " + maximumString.MaxMethod());
         }
     }
