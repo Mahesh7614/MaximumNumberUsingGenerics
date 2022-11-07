@@ -9,7 +9,7 @@ namespace MaximumNumberUsingGenerics
 {
     public class MaximumNumber
     {
-        public M MaxNumber<M>(M value1, M value2, M value3)
+        public M MaxNumber<M>(M value1, M value2, M value3) where M : IComparable
         {
             if (value1.CompareTo(value2) > 0 && value1.CompareTo(value3) > 0 ||
                 value1.CompareTo(value2) >= 0 && value1.CompareTo(value3) > 0 ||
